@@ -1,6 +1,10 @@
 {
   "name": "fm-interactive-card-details-form",
+  "author": "Boonyarit Iamsa-ard",
+  "description": "This is a solution to the Interactive card details form challenge on Frontend Mentor",
   "private": true,
+  "license": "MIT",
+  "homepage": "https://github.com/boonyarit-iamsaard/fm-interactive-card-details-form",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
