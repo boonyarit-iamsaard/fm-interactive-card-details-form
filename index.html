@@ -32,42 +32,49 @@
       }
     </style>
   </head>
-  <body>
-    <main class="main-container">
-      <section class="interactive-card-section">
-        <div class="card-container">
-          <div class="card card-back">
+  <body class="d-grid">
+    <main class="main-container d-grid">
+      <section class="interactive-card-section d-grid text-white uppercase">
+        <div class="card-container d-grid">
+          <div class="card card-back d-grid">
             <img
               src="./src/assets/images/bg-card-back.png"
               alt="card back"
               class="card-image"
             />
-            <div class="card-body">
-              <p>000</p>
+            <div class="card-body d-grid fs-detail">
+              <p class="card-cvc">000</p>
             </div>
           </div>
-          <div class="card card-front">
+          <div class="card card-front d-grid">
             <img
               src="./src/assets/images/bg-card-front.png"
               alt="card front"
               class="card-image"
             />
-            <div class="card-body">
-              <p>0000 0000 0000 0000</p>
-              <div class="d-flex">
-                <div>Jane Appleseed</div>
-                <div>
+            <div class="card-body d-flex">
+              <img
+                src="./src/assets/images/card-logo.svg"
+                width="84"
+                height="47"
+                alt="card logo"
+                class="card-logo"
+              />
+              <div class="fs-detail">
+                <p class="card-number fs-title">0000 0000 0000 0000</p>
+                <p>Jane Appleseed</p>
+                <p>
                   <span>00</span>
                   <span>/</span>
                   <span>00</span>
-                </div>
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="form-section">
+      <section class="form-section d-grid">
         <form class="form-container">
           <div class="row">
             <label for="cardholder-name" class="form-label"
@@ -131,7 +138,7 @@
           </div>
         </form>
 
-        <div class="form-message">
+        <!-- <div class="form-message">
           <img
             src="./src/assets/images/icon-complete.svg"
             alt="complete icon"
@@ -140,21 +147,23 @@
           <p class="message-title">Thank you!</p>
           <p class="message-text">We've added your card details</p>
           <div class="d-grid"><button class="btn">continue</button></div>
-        </div>
+        </div> -->
       </section>
 
-      <section class="attribution">
-        Challenge by
-        <a
-          href="https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw"
-          target="_blank"
-          >Frontend Mentor | Interactive card details form</a
-        >. Coded by
-        <a
-          href="https://github.com/boonyarit-iamsaard/fm-interactive-card-details-form"
-          target="_blank"
-          >Boonyarit Iamsa-ard</a
-        >.
+      <section class="attribution-section d-grid">
+        <div>
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw"
+            target="_blank"
+            >Frontend Mentor | Interactive card details form</a
+          >. Coded by
+          <a
+            href="https://github.com/boonyarit-iamsaard/fm-interactive-card-details-form"
+            target="_blank"
+            >Boonyarit Iamsa-ard</a
+          >.
+        </div>
       </section>
     </main>
 
