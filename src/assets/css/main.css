@@ -1,3 +1,39 @@
+:root {
+  /* Colors */
+  --color-blue-400: 249 99% 64%;
+  --color-blue-600: 228 45% 44%;
+  --color-grayish-violet-200: 270 3% 87%;
+  --color-grayish-violet-500: 279 6% 55%;
+  --color-grayish-violet-900: 278 68% 11%;
+  --color-red-400: 0 100% 66%;
+  --color-violet-700: 278 94% 30%;
+  --color-white: 0 0% 100%;
+
+  --color-error: var(--color-red-400);
+  --color-light: var(--color-grayish-violet-200);
+  --color-accent: var(--color-grayish-violet-500);
+  --color-dark: var(--color-grayish-violet-900);
+
+  /* Typography */
+  --ff-primary: 'Space Grotesk';
+
+  --fs-100: 0.625rem;
+  --fs-200: 0.75rem;
+  --fs-300: 0.875rem;
+  --fs-400: 1rem;
+  --fs-500: 1.125rem;
+  --fs-600: 1.25rem;
+  --fs-700: 1.5rem;
+
+  --fs-details: var(--fs-100);
+  --fs-label: var(--fs-200);
+  --fs-body: var(--fs-500);
+  --fs-title: var(--fs-500);
+  --fs-heading: var(--fs-700);
+
+  --fw-medium: 500;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -26,8 +62,9 @@ html:focus-within {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 500;
+  font-family: var(--ff-primary), sans-serif;
+  font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -63,10 +100,10 @@ svg {
 }
 
 .attribution {
-  font-size: 0.75rem;
+  font-size: var(--fs-label);
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(var(--color-blue-600));
 }
