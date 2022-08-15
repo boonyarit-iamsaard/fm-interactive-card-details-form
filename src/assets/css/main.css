@@ -99,6 +99,29 @@ svg {
   }
 }
 
+/* Utility classes */
+.d-grid {
+  display: grid;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row > * {
+  width: 100%;
+  max-width: 100%;
+}
+
+.col {
+  flex: 1 0 0%;
+}
+
 .attribution {
   font-size: var(--fs-label);
   text-align: center;
